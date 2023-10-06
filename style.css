@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color:#fff;
+}
+.main-header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(backGround.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+     padding: 50px 15% 10px;
+     border-bottom: 6px solid #333;
+    
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    color: #db0001;
+}
+
+.logo {
+   width: 180px;
+   cursor: pointer;
+}
+
+nav button {
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 25px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.lg-btn {
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 7px 10px;
+}
+
+.lg-btn img {
+    width: 10px;
+    margin-left: 10px;
+}
+
+.Advertisements {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+    font-weight: 700px;
+    
+}
+
+.Advertisements h1 {
+    font-size: 65px;
+    line-height: 70px;
+    font-weight: 700;
+    max-width: 650px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: 120px;
+
+}
+
+.Advertisements h2 {
+       font-weight: 500;
+       margin-bottom: 40px;
+       font-size: 38px;
+}
+p{
+    font-size: 28px;
+}
+
+
+.email-sign-up {
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;   
+}
+
+.email-sign-up input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+
+.email-sign-up button {
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;    
+}
+
+.card {
+    
+    font-size: 22px;
+    padding: 70px 15% 10px;
+    border-bottom: 10px solid #333;    
+}
+
+.row {
+    display:flex;
+    width:100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.text-row {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+
+}
+
+.img-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.card h1 {
+     font-size: 50px;
+     font-weight: 600;
+     margin-bottom: 20px;    
+}
+
+.faq {
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+    padding: 50px 15% 10px;
+    border-bottom: 10px solid #333;
+}
+
+.faq h2 {
+    font-weight: 500;
+    font-size: 70px;
+}
+
+.information {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.information li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+    font-size: 7px;
+}
+
+.information li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 28px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.information li label:hover{
+    font-size: xx-large;
+}
+
+label::after{
+   content: '+';
+   font-size: 34px;
+   position: absolute;
+   right: 20px; 
+   transition: transform 0.5s;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.information .content {
+          background: #303030;
+          text-align: left;
+          padding: 0 20px;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.5s, padding 0.5s;
+}
+
+.information input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.information input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+.faq .email-sign-up {
+    max-width: 700px;
+    margin: 20px auto 60px;
+}
+
+
+.faq small {
+    font-size: 20px;
+}
+
+
+
+.footer {
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+.footer h2 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer .col {
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+    
+}
+.footer .col a {
+    display: block;
+    text-decoration: none;
+    color:#777;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.footer .row {
+    align-items: flex-start;
+    padding: 10px 0;
+}
+.footer .lg-btn {
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 25px;
+}
+
+.in-india {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+@media only screen  and (max-width: 600PX){
+  .logo{
+    width: 100px;
+  }
+  nav button{
+    padding: 5px 10px;
+  }
+    nav.lg-btn {
+        padding: 4px 8px;
+    }
+    .Advertisements {
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+    }
+    .Advertisements h1{
+        font-size: 30px;
+    }
+    .email-sign-up button{
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+    .text-row, .img-col {
+        flex-basis: 100%;
+    }
+    .card h1 {
+        font-size: 30px;
+    } 
+    .card p {
+        font-size: 15px;
+    }    
+    .row:nth-child(2), .row:nth-child(4){
+        flex-direction: column-reverse;
+    } 
+    .faq h2 {
+        font-size: 20px;
+    } 
+    .information .content {
+        font-size: 14px;
+    }
+    .information li label{
+        padding: 10px;
+        font-size: 14px;
+    }
+    label::after{
+        font-size:22px;
+    }
+}
+    
+
+
+
+
